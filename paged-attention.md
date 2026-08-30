@@ -1,6 +1,7 @@
 # Efficient Memory Management for Large Language Model Serving with PagedAttention
 
 > 참고: [arXiv:2309.06180](https://arxiv.org/abs/2309.06180) (SOSP '23)
+> 참고 영상: [YouTube](https://www.youtube.com/watch?v=5ZlavKF_98U)
 
 ## 1. 서론
 
