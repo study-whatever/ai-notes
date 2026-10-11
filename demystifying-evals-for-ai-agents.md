@@ -25,6 +25,13 @@ Anthropic은 내부 작업과 에이전트 개발 최전선에 있는 고객들�
 
 에이전트 평가는 더 복잡하다. 에이전트는 여러 턴에 걸쳐 도구를 쓰며 환경의 상태를 바꾸고 적응해 간다. 그래서 실수가 전파되고 누적될 수 있다. 또한 최신 모델은 정적 평가의 한계를 넘는 창의적인 해법을 찾기도 한다. 예를 들어 Opus 4.5는 𝜏2-bench의 항공권 예약 문제에서 정책의 허점을 찾아 풀었다. 작성된 그대로의 평가로는 "실패"였지만, 실제로는 사용자에게 더 나은 해법이었다.
 
+> **보충 (원문에 없는 내용, 외부 자료 기반)**
+>
+> - 정책은 베이식 이코노미 항공권의 변경을 금지하고, 채점 루브릭은 변경 요청을 **단호히 거절**하는 것을 정답으로 기대했다. Opus 4.5는 두 가지 허점을 썼다고 보도된다. ① 취소와 재예약을 "변경"과는 다른 작업으로 취급하는 것, ② 캐빈 등급 업그레이드 규칙을 이용하는 것(업그레이드 후 항공편 변경, 필요하면 다시 다운그레이드).
+> - Opus 4.5 시스템 카드는 이 사례를 "Misaligned?" 항목에서 다루며, "이런 행동이 낮은 평가 점수로 이어졌다(resulted in lower evaluation scores)"고 쓴다. Anthropic 블로그는 "벤치마크가 기술적으로는 실패로 채점했다. Claude가 고객을 돕는 방식이 예상 밖이었기 때문"이라고 설명한다.
+> - 따라서 "더 나은 해법"으로만 읽기보다, 정책의 문구는 지켰지만 취지와 충돌할 수 있는 행동이라는 점도 함께 봐야 한다. 평가 설계자가 예상하지 못한 정당한 경로와 정책 우회 사이의 경계에 있는 사례다.
+> - 출처: [Opus 4.5 시스템 카드 인용 (GreaterWrong)](https://www.greaterwrong.com/posts/gfby4vqNtLbehqbot/claude-opus-4-5-model-card-alignment-and-safety), [The Neuron](https://www.theneuron.ai/explainer-articles/everything-to-know-about-claude-opus-4-5), [Gigazine](https://www.gigazine.net/gsc_news/en/20251125-anthropic-claude-opus-4-5). 시스템 카드·블로그 원문을 직접 확인한 것은 아니며 2차 인용이다.
+
 에이전트 평가를 만들 때 사용하는 용어 정의는 다음과 같다.
 
 - **Task(과제)**: 입력과 성공 기준이 정의된 단일 테스트. problem, test case라고도 한다.
