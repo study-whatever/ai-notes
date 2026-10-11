@@ -356,10 +356,6 @@ AI 제품팀에게 평가를 소유하고 반복하는 일은 유닛 테스트 �
 
 AI 에이전트 평가는 아직 초기 단계이며 빠르게 진화하는 분야다. 에이전트가 더 긴 과제를 맡고, 멀티 에이전트로 협업하고, 더 주관적인 작업을 처리하게 되면 기법도 적응해야 한다. Anthropic은 더 배우는 대로 모범 사례를 계속 공유할 예정이다.
 
-## Acknowledgements (감사의 말)
-
-Mikaela Grace, Jeremy Hadfield, Rodrigo Olivares, Jiri De Jonghe가 작성했다. David Hershey, Gian Segato, Mike Merrill, Alex Shaw, Nicholas Carlini, Ethan Dixon, Pedram Navid, Jake Eaton, Alyssa Baum, Lina Tawfik, Karen Zhou, Alexander Bricken, Sam Kennedy, Robert Ying 등의 기여에도 감사한다. 평가 협업을 통해 배운 고객과 파트너(iGent, Cognition, Bolt, Sierra, Vals.ai, Macroscope, PromptLayer, Stripe, Shopify, Terminal Bench 팀 등)에게도 특별히 감사한다.
-
 ## Appendix: Eval frameworks (부록: 평가 프레임워크)
 
 여러 오픈소스·상용 프레임워크가 인프라를 직접 만들지 않고 에이전트 평가를 구현하도록 돕는다. 선택은 에이전트 유형, 기존 스택, 오프라인 평가·프로덕션 관측성 필요 여부에 따라 달라진다.
