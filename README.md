@@ -9,4 +9,4 @@ AI 학습 노트. vLLM 내부 구조(엔진, 스케줄러, KV 캐시, 분산 서
 - [Demystifying evals for AI agents](demystifying-evals-for-ai-agents.md) — Anthropic 엔지니어링 블로그 번역·정리. 에이전트 평가의 구조, 채점기 유형, pass@k/pass^k, 평가 구축 로드맵
 - [Investigating unintended model actions](investigating-unintended-model-actions.md) — Anthropic 리서치 블로그 요약. 평가·내부 사용 중 Claude가 보인 제약 우회 행동 4유형(서버 결함 악용, 폼 제출, 유료·접근 제한 우회, URL 단축)과 대응·정렬 관점
 - [Advancing computer use with Ironclad](advancing-computer-use-with-ironclad.md) — OpenAI 리서치 블로그 요약. 계약 관리 소프트웨어 워크플로를 학습·평가 과제로 바꾼 방식(11개 과제, rubric 채점, 호스팅 환경 + RL)과 GPT-6 Astra vs GPT-5.6 Sol 비교 결과
-- [Introduction to Supervised Learning](introduction-to-supervised-learning.md) — 지도학습의 4단계, 회귀 함수, 모수적·비모수적 모델, 일반화와 편향·분산 정리
+- [MLDL 2026 강의 노트](mldl-2026/README.md) — 머신러닝과 딥러닝 강의 재생목록 정리

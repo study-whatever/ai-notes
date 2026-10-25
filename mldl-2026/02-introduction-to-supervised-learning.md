@@ -1,6 +1,6 @@
 # 2. Introduction to Supervised Learning
 
-[강의 영상](https://www.youtube.com/watch?v=B5JhhG7fXjs&list=PL0E_1UqNACXCpyohL0_uMNaqr0QuXOMBi&index=2)
+[강의 영상](https://www.youtube.com/watch?v=B5JhhG7fXjs&list=PL0E_1UqNACXCpyohL0_uMNaqr0QuXOMBi)
 
 **AI와 지능**
 
