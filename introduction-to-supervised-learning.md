@@ -54,7 +54,7 @@
 - 목표는 예측 $\hat y=f(x)$를 실제 $y$에 가깝게 만드는 것이다. 대표적인 기준은 **평균제곱오차(MSE)**다.
 - 제곱오차의 조건부 기댓값 $\mathbb E[(Y-g(x))^2\mid X=x]$를 최소화하는 함수는 $f(x)=\mathbb E[Y\mid X=x]$다. 즉, 제곱오차 기준에서는 같은 입력에 대한 결과의 조건부 평균이 최적 예측이다.
 
-- 실제 관계를 $Y=f(X)+\epsilon$이라 할 때, 추정 함수 $\hat f$의 조건부 예측 오차는 $\mathbb E[(Y-\hat f(X))^2\mid X=x]=(f(x)-\hat f(x))^2+\operatorname{Var}(\epsilon)$로 나뉜다. 여기서는 오차항의 조건부 평균이 0이라고 본다.
+- 실제 관계를 $Y=f(X)+\epsilon$이라 할 때, 추정 함수 $\hat f$의 조건부 예측 오차는 $\mathbb E[(Y-\hat f(X))^2\mid X=x]=(f(x)-\hat f(x))^2+\mathrm{Var}(\epsilon)$로 나뉜다. 여기서는 오차항의 조건부 평균이 0이라고 본다.
 - 첫 항은 모델을 더 잘 학습해 줄일 수 있는 오차다. 둘째 항은 정확한 $f$를 알아도 남는 **줄일 수 없는 오차(irreducible error)**다.
 
 - 훈련 데이터는 관측된 $n$개의 $(x_i,y_i)$ 쌍이다. 이 데이터로 미지의 함수 $f$를 추정하는 단계가 최적화다.
@@ -69,7 +69,7 @@
 
 - 모델이 지나치게 단순하면 관계를 충분히 표현하지 못하는 **언더피팅(underfitting)**, 훈련 데이터의 잡음까지 따라가면 **오버피팅(overfitting)**이 생긴다. 적절한 복잡도는 테스트 오차로 판단한다.
 - 예측 정확도와 해석 가능성 사이에도 선택이 필요하다. 단순한 모델은 설명하기 쉽지만 복잡한 관계를 놓칠 수 있다.
-- 슬라이드의 편향·분산 분해는 기대 테스트 제곱오차를 $\operatorname{Var}(\hat f(x_0))+\operatorname{Bias}(\hat f(x_0))^2+\operatorname{Var}(\epsilon)$로 나타낸다. 일반적으로 모델의 유연성이 높아지면 편향은 줄고 분산은 커질 수 있다.
+- 슬라이드의 편향·분산 분해는 기대 테스트 제곱오차를 $\mathrm{Var}(\hat f(x_0))+\mathrm{Bias}(\hat f(x_0))^2+\mathrm{Var}(\epsilon)$로 나타낸다. 일반적으로 모델의 유연성이 높아지면 편향은 줄고 분산은 커질 수 있다.
 
 **Classification Problem**
 
