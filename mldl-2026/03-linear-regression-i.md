@@ -189,11 +189,11 @@ $\hat\beta$의 통계적 성질
 
 좋은 estimator는 실제값 근처에 밀집해서 분포한다.
 
-- bias: systematic tendency in which the methods used to gather data and generate statistics present an inaccurate or skewed depiction of reality
-	- 추정값의 기댓값과 실제값의 차이 $\mathbb E(\hat\theta) - \theta$. 예: 확률을 정해둔 동전으로 100번 던져 추정하는 시뮬레이션을 여러 번 반복했을 때, 추정값들의 평균이 실제값에서 벗어나 있으면 bias가 있다.
-- Variance: 예측값들 사이의 흩어짐 (Expected value of the squared deviation from the mean of a random variable)
-	- 추정을 여러 번 했을 때 데이터가 달라서 생기는, 추정값들과 그 평균 사이의 분산 $\mathbb E[(\hat\theta - \mathbb E(\hat\theta))^2]$
-- Mean Squared Error: average squared difference between the estimated values and the actual value
+- 편향(Bias): 추정값의 기댓값과 실제값의 차이 $\mathbb E(\hat\theta) - \theta$. 데이터를 모으고 통계를 내는 방법 자체가 현실을 한쪽으로 치우치게 보여주는 체계적인 경향이다.
+	- 예: 확률을 정해둔 동전을 100번 던져 추정하는 시뮬레이션을 여러 번 반복했을 때, 추정값들의 평균이 실제값에서 벗어나 있으면 편향이 있는 것이다.
+- 분산(Variance): 추정을 여러 번 했을 때 데이터가 달라서 생기는 추정값들의 흩어짐. 추정값과 그 평균 사이 차이를 제곱한 값의 기댓값 $\mathbb E[(\hat\theta - \mathbb E(\hat\theta))^2]$이다.
+- 평균제곱오차(MSE): 추정값과 실제값 차이를 제곱한 값의 평균이다.
+
 
 우리가 줄이고 싶은 것은 MSE이고, 이는 variance + bias²로 분해된다.
 ![MSE 분해 정리](images/03-linear-regression-i/mse-decomposition-theorem.png)
